@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UserSecretsId>582fbb0e-0154-429e-b691-d1af87d1ffad</UserSecretsId>
+    <ApplicationIcon>imge-removebg-preview.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Images\3094352-removebg-preview %283%29.png" />
+    <None Remove="Assets\Images\5357377_Internet-go-removebg-preview.png" />
+    <None Remove="Assets\Images\apple-tree-garden-green.jpg" />
+    <None Remove="Assets\Images\Elonlar.png" />
+    <None Remove="Assets\Images\Kelishilganlar.png" />
+    <None Remove="Assets\Images\logo.png" />
+    <None Remove="Assets\Images\luik.jpg" />
+    <None Remove="Assets\Images\Salomaka.png" />
+    <None Remove="Assets\Images\Screenshot 2023-08-15 214117.png" />
+    <None Remove="Assets\Images\Screenshot 2023-08-15 215526.png" />
+    <None Remove="Assets\Images\SecurityImage.jpg" />
+    <None Remove="Assets\Images\Users.png" />
+    <None Remove="Assets\Images\YangiElonlar.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="imge-removebg-preview.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.10.1" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.20.0" />
+    <PackageReference Include="Emgu.CV" Version="4.8.0.5324" />
+    <PackageReference Include="Emgu.CV.Bitmap" Version="4.8.0.5324" />
+    <PackageReference Include="FontAwesome.WPF" Version="4.7.0.9" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.11.0" />
+    <PackageReference Include="ToastNotifications" Version="2.5.1" />
+    <PackageReference Include="ToastNotifications.Messages" Version="2.5.1" />
+    <PackageReference Include="WPFNotification" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GreenSale.Integrated\GreenSale.Integrated.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\3094352-removebg-preview (3).png" />
+    <Resource Include="Assets\Images\5357377_Internet-go-removebg-preview.png" />
+    <Resource Include="Assets\Images\apple-tree-garden-green.jpg" />
+    <Resource Include="Assets\Images\logo.png" />
+    <Resource Include="Assets\Images\luik.jpg" />
+    <Resource Include="Assets\Images\Screenshot 2023-08-15 214117.png" />
+    <Resource Include="Assets\Images\Screenshot 2023-08-15 215526.png" />
+    <Resource Include="Assets\Images\SecurityImage.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\Users.png" />
+    <Resource Include="Assets\Images\YangiElonlar.png" />
+    <Resource Include="Assets\Images\Kelishilganlar.png" />
+    <Resource Include="Assets\Images\Elonlar.png" />
+    <Resource Include="Assets\Images\Salomaka.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assets\Dowloands\Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+</Project>

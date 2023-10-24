@@ -1,0 +1,335 @@
+﻿<Window x:Class="GreenSale.Desktop.Windows.Products.StorageProductViewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GreenSale.Desktop.Windows.Products"
+        mc:Ignorable="d"
+        Title="StorageProductViewWindow"
+        AllowsTransparency="True"
+        Background="Transparent"
+         WindowState="Maximized"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Loaded="Window_Loaded">
+    <Border Height="500" Width="550"
+            
+            Margin="0 0 0 0"
+            CornerRadius="10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0"
+                    BorderThickness="0 0 0 1"
+                    BorderBrush="Green"
+                CornerRadius="10 10 0 0"
+                Background="{DynamicResource SecondaryBackground}">
+                <Button x:Name="btnCreateWindowClose"
+                        Height="35"
+                        Width="35"
+                    Click="btnCreateWindowClose_Click"
+                    Style="{DynamicResource CloseButtun}"                    
+                    HorizontalAlignment="Right"/>
+            </Border>
+            <Border Grid.Row="1"
+                CornerRadius="0 0 10 10"
+                    Padding="0"
+                   
+                Background="{DynamicResource SecondaryBackground}">
+                <StackPanel Margin="0 10 0 0">
+                    <StackPanel Height="250">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="240"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel>
+                                <Border x:Name="btnPicture"
+                                Grid.Column="0" 
+                                CornerRadius="10"
+                                Height="200"
+                                Width="190"
+                                Cursor="Hand"
+                                Margin="0 0 0 0"  
+                                BorderThickness="1"
+                                BorderBrush="Green"
+                                >
+                                    <Border.Background>
+                                        <ImageBrush x:Name="Img" Stretch="UniformToFill" 
+                                                ImageSource="/assets/images/luik.jpg"/>
+                                    </Border.Background>
+                                </Border>
+                                <StackPanel Orientation="Horizontal">
+                                    <Border Cursor="Hand"
+                                        x:Name="br_star_1"
+                                        MouseDown="click_star_1"
+                                        Margin="20 10 0 0">
+                                        <Path x:Name="star_1"
+                                              Width="35" Height="35"
+                                              StrokeThickness="1"
+                                              Stroke="Yellow"
+                                              Margin="0"
+                                              Data="{DynamicResource star}"
+                                              Stretch="Uniform"
+                                              Fill="Transparent"/>
+                                    </Border>
+                                    <Border Cursor="Hand"
+                                        x:Name="br_star_2"
+                                        MouseDown="click_star_2"
+                                        Margin="5 10 0 0">
+                                        <Path Width="35" Height="35"
+                                          x:Name="star_2"
+                                          StrokeThickness="1"
+                                          Stroke="Yellow"
+                                          Margin="0"
+                                          Data="{DynamicResource star}"
+                                          Stretch="Uniform"
+                                          Fill="Transparent"/>
+                                    </Border>
+                                    <Border Cursor="Hand"
+                                        x:Name="br_star_3"
+                                        MouseDown="click_star_3"
+                                        Margin="5 10 0 0">
+
+                                        <Path  Width="35" Height="35"
+                                          x:Name="star_3"
+                                          StrokeThickness="1"
+                                          Stroke="Yellow"
+                                          Margin="0"
+                                          Data="{DynamicResource star}"
+                                          Stretch="Uniform"
+                                          Fill="Transparent"/>
+                                    </Border>
+                                    <Border Cursor="Hand"
+                                        x:Name="br_star_4"
+                                        MouseDown="click_star_4"
+                                        Margin="5 10 0 0">
+
+                                        <Path  Width="35" Height="35"
+                                          x:Name="star_4"
+                                          StrokeThickness="1"
+                                          Stroke="Yellow"
+                                          Margin="0"
+                                          Data="{DynamicResource star}"
+                                          Stretch="Uniform"
+                                          Fill="Transparent"/>
+                                    </Border>
+                                    <Border Cursor="Hand"
+                                        x:Name="br_star_5"
+                                        MouseDown="click_star_5"
+                                        Margin="5 10 0 0">
+
+                                        <Path Width="35" Height="35"
+                                          x:Name="star_5"
+                                          StrokeThickness="1"
+                                          Stroke="Yellow"
+                                          Margin="0"
+                                          Data="{DynamicResource star}"
+                                          Stretch="Uniform"
+                                          Fill="Transparent"/>
+                                    </Border>
+                                </StackPanel>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1"
+                                    Margin="10 0 10 0">
+
+                                <Border 
+                                    Width="270"
+                                    HorizontalAlignment="Left"
+                                    Background="{DynamicResource SecondaryBackground}"
+                                    BorderThickness="0 0  0 0.5"
+                                    BorderBrush="{DynamicResource SelectedBorderColor}"
+                                    VerticalAlignment="Center"
+                                    Margin="0 5 0 0">
+                                    <TextBlock x:Name="txbStorageName" 
+                                           FontSize="26"
+                                         Text="Oltiariq  yukxonasi"
+                                         Margin="0 5"
+                                         Background="{DynamicResource SecondaryBackground}"
+                                         VerticalAlignment="Center"
+                                         Foreground="{DynamicResource FifthTextColor}"/>
+                                </Border>
+
+                                <Border Width="270"                                    
+                                    HorizontalAlignment="Left"
+                                    Background="{DynamicResource SixthBackground}"
+                                    CornerRadius="10"
+                                    BorderThickness="0"
+                                    BorderBrush="{DynamicResource SixthBackground}"
+                                    VerticalAlignment="Center"
+                                    Margin="0 20 0 0">
+                                    <TextBlock x:Name="txbInfo"
+                                           Text="Yukxonaga sveji olma, anor, nok, gilos va o'rik olamiz." 
+                                         FontSize="18"
+                                         Margin="10 5"
+                                         Background="{DynamicResource SixthBackground}"
+                                         VerticalAlignment="Center"
+                                         TextWrapping="Wrap"                                         
+                                         Foreground="{DynamicResource FifthTextColor}"/>
+                                </Border>
+                                <Border CornerRadius="10"
+                                    VerticalAlignment="Center"
+                                    Margin="0 10 20 0"
+                                    Background="{DynamicResource SixthBackground}">
+                                    <StackPanel Orientation="Horizontal"
+                                        Margin="0 3 0 3">
+                                        <TextBlock Text="Ism:" 
+                                             FontSize="18"
+                                             Margin="10 5"
+                                             Background="{DynamicResource SixthBackground}"
+                                             VerticalAlignment="Center"
+                                             TextWrapping="Wrap"                                         
+                                             Foreground="{DynamicResource FifthTextColor}"/>
+                                        <TextBlock x:Name="txbFullName"
+                                               Text="Aliyev Vali" 
+                                             FontSize="18"
+                                             Margin="-5 5"
+                                             Background="{DynamicResource SixthBackground}"
+                                             VerticalAlignment="Center"
+                                             TextWrapping="Wrap"                                         
+                                             Foreground="{DynamicResource FifthTextColor}"/>
+                                    </StackPanel>
+                                </Border>
+                                <Border CornerRadius="10"
+                                    Margin="0 10 20 0"
+                                    Background="{DynamicResource SixthBackground}">
+                                    <StackPanel Orientation="Horizontal"
+                                        Margin="0 3 0 3">
+                                        <TextBlock Text="Tel:" 
+                                         FontSize="18"
+                                         Margin="10 5"
+                                         Background="{DynamicResource SixthBackground}"
+                                         VerticalAlignment="Top"
+                                         TextWrapping="Wrap"                                         
+                                         Foreground="{DynamicResource FifthTextColor}"/>
+                                        <TextBlock x:Name="txbPhone" Text="+998977771747" 
+                                         FontSize="18"
+                                         Margin="-5 5"
+                                         Background="{DynamicResource SixthBackground}"
+                                         VerticalAlignment="Top"
+                                         TextWrapping="Wrap"                                         
+                                         Foreground="{DynamicResource FifthTextColor}"/>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+
+                    <Grid Margin="20 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Border CornerRadius="10"
+                            Margin="0 10 10 0"                            
+                            Background="{DynamicResource SixthBackground}">
+                            <StackPanel Grid.Column="0" 
+                                Orientation="Horizontal"
+                                VerticalAlignment="Center"
+                                Margin="0 3 0 3">
+                                <TextBlock Text="Viloyat:" 
+                                         FontSize="18"
+                                         Margin="10 5"
+                                         Background="{DynamicResource SixthBackground}"
+                                         VerticalAlignment="Top"
+                                         TextWrapping="Wrap"                                         
+                                         Foreground="{DynamicResource FifthTextColor}"/>
+                                <TextBlock x:Name="txbRegion" 
+                                   Text="Farg'ona" 
+                                         FontSize="18"
+                                         Margin="-5 5"
+                                         Background="{DynamicResource SixthBackground}"
+                                         VerticalAlignment="Top"
+                                         TextWrapping="Wrap"                                         
+                                         Foreground="{DynamicResource FifthTextColor}"/>
+                            </StackPanel>
+                        </Border>
+                        <Border CornerRadius="10"
+                            Grid.Column="1" 
+                            Margin="0 10 10 0"
+                            Background="{DynamicResource SixthBackground}">
+                            <StackPanel 
+                                Orientation="Horizontal"
+                                VerticalAlignment="Center"
+                                Margin="0 3 0 3">
+                                <TextBlock Text="Tuman:" 
+                                         FontSize="18"
+                                         Margin="10 5"
+                                         Background="{DynamicResource SixthBackground}"
+                                         VerticalAlignment="Top"
+                                         TextWrapping="Wrap"                                         
+                                         Foreground="{DynamicResource FifthTextColor}"/>
+                                <TextBlock x:Name="txbDistrict" Text="Oltiariq" 
+                                         FontSize="18"
+                                         Margin="-5 5"
+                                         Background="{DynamicResource SixthBackground}"
+                                         VerticalAlignment="Top"
+                                         TextWrapping="Wrap"                                         
+                                         Foreground="{DynamicResource FifthTextColor}"/>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                    <Border CornerRadius="10"
+                        Margin="20 10 30 0"
+                        Background="{DynamicResource SixthBackground}">
+                        <StackPanel Orientation="Horizontal"
+                            VerticalAlignment="Center"
+                            Margin="0 3 0 3">
+                            <TextBlock Text="Manzil:"
+                                         FontSize="18"
+                                         Margin="10 5"
+                                         Background="{DynamicResource SixthBackground}"
+                                         VerticalAlignment="Top"
+                                         TextWrapping="Wrap"                                         
+                                         Foreground="{DynamicResource FifthTextColor}"/>
+                            <TextBlock x:Name="txbAddress"
+                               Text="Qo'rg'ontepa mahallasi" 
+                                         FontSize="18"
+                                         Margin="-5 5"
+                                         Background="{DynamicResource SixthBackground}"
+                                         VerticalAlignment="Top"
+                                         TextWrapping="Wrap"                                         
+                                         Foreground="{DynamicResource FifthTextColor}"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border CornerRadius="10"
+                        Margin="20 10 30 0"
+                        Background="{DynamicResource SixthBackground}">
+                        <StackPanel Orientation="Horizontal"
+                            VerticalAlignment="Top"
+                            Margin="0 0 5 5">
+                            <TextBlock Text="Tasnif:"
+                                         FontSize="18"
+                                         Margin="10 5"
+                                         Background="{DynamicResource SixthBackground}"
+                                         VerticalAlignment="Top"
+                                         TextWrapping="Wrap"                                         
+                                         Foreground="{DynamicResource FifthTextColor}"/>
+                            <Border Width="400"                                    
+                                    HorizontalAlignment="Left"
+                                    Background="{DynamicResource SixthBackground}"
+                                    CornerRadius="10"
+                                    BorderThickness="0"
+                                    BorderBrush="{DynamicResource SixthBackground}"
+                                    Margin="0 0 0 0">
+                                <TextBlock x:Name="txbDescription"
+                                       Text="asdasd asda dasd asd asd sadasd as dasd as das asd a asdas asd asd " 
+                                         FontSize="18"
+                                         Margin="0 5 0 5"
+                                         Background="{DynamicResource SixthBackground}"
+                                         VerticalAlignment="Center"
+                                         TextWrapping="Wrap"                                         
+                                         Foreground="{DynamicResource FifthTextColor}"/>
+                            </Border>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Border>
+    
+</Window>

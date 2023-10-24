@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="GreenSale.Desktop.Companents.ProductControls.ProductCountControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Name="CountInfo"
+             >
+              
+    <Border Margin="9 0 0 0" Style="{DynamicResource border}"  >
+        <StackPanel>
+        <StackPanel Orientation="Horizontal">
+         <Image  Source="{Binding ElementName=CountInfo, Path=Image}" Margin="0 0 10 0" Width="45" Height="45"/>
+            <TextBlock Text="{Binding ElementName=CountInfo, Path=Title}" Style="{DynamicResource titleText}"/>
+        </StackPanel>
+            <TextBlock Text="{Binding ElementName=CountInfo, Path=SubTitle}" Style="{DynamicResource titleSecoundText}" Margin="0 0 0 0" FontSize="12"/>
+            <Slider 
+                Style="{DynamicResource SliderStyle1}" 
+                x:Name="Slider" 
+                IsMouseCapturedChanged="Slider_IsMouseCapturedChanged"
+                Margin="0 5 0 0"
+                Minimum="0.0"
+                Maximum="100"
+                IsSelectionRangeEnabled="False" 
+                Value="{Binding ElementName=CountInfo,Path=Amount}" 
+                SelectionEnd="{Binding ElementName=Slider,Path=Value}" 
+                ValueChanged="Slider_ValueChanged"/>
+        </StackPanel>
+    </Border>
+</UserControl>

@@ -1,0 +1,245 @@
+﻿<Window x:Class="GreenSale.Desktop.Windows.Auth.SendCodeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GreenSale.Desktop.Windows.Auth"
+        mc:Ignorable="d"
+        Title="SendCodeWindow"
+        Height="700" Width="1200"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        Loaded="loaded"
+        Background="Transparent"
+        
+>
+    <Grid>
+        <Border Background="White" 
+                CornerRadius="10"
+                Height="500" 
+                Width="450">
+            <StackPanel >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Border Grid.Column="1" Height="50">
+                        <Button x:Name="btnClose"
+                            Click="btnClose_Click"
+                            Style="{DynamicResource CloseButtun}"
+                            HorizontalAlignment="Right"
+                            Margin="0 0 15 0"/>
+                    </Border>
+                </Grid >
+                <Label Content="Kodni kiriting"
+                   FontSize="28"
+                   Foreground="{DynamicResource FifthTextColor}"
+                   HorizontalAlignment="Center"
+                   Margin="0 10 0 20"/>
+                <Border Height="20">
+                    <StackPanel Orientation="Horizontal"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Margin="-15 0 30 0"
+                        Height="32">
+                        <Label Content="Telefonni tasdiqlash uchun"
+                       FontSize="16"
+                       Foreground="{DynamicResource FourthTextColor}"
+                       HorizontalAlignment="Center"
+                       Margin="0 0 10 0"/>
+                        <Label x:Name="txtPhoneNum" Content="+998 931211121"
+                       FontSize="16"
+                       FontWeight="Bold"
+                       Foreground="{DynamicResource FifthTextColor}"
+                       HorizontalAlignment="Center"
+                       Margin="0 0 0 0"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Height="22">
+                    <Label Content="raqamiga 5 xonali kod yuborildi."
+                   FontSize="16"
+                   Height="32"
+                   VerticalAlignment="Center"
+                   Foreground="{DynamicResource FourthTextColor}"
+                   Margin="30 0 30 0"/>
+                </Border>
+                <StackPanel Height="50"
+                        Margin="0 50 0 0"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                    <Border CornerRadius="10" 
+                        Width="40"
+                        Margin="5 0 5 0"
+                        x:Name="Inp_code_1"
+                        BorderThickness="2"
+                        BorderBrush="ForestGreen"
+                        Background="White"
+                        Height="50"
+                        
+                        >
+                        <TextBox x:Name="txtCode1"
+                             TextChanged="txtCode_TextChanged"
+                             Height="35" Width="20"
+                             PreviewTextInput="txtCode1_PreviewTextInput"
+                             MaxLength="1"
+                             Margin="0 5 0 0"
+                             Background="White"
+                             Foreground="{DynamicResource FifthTextColor}"
+                             FontSize="26"
+                             FontFamily="send-series"
+                             BorderThickness="0"/>
+                    </Border>
+                    <Border CornerRadius="10" 
+                        Width="40"
+                        Margin="5 0 5 0"
+                        Height="50"
+                        x:Name="Inp_code_2"
+                        BorderThickness="2"
+                        BorderBrush="ForestGreen"
+                        Background="White"
+                        >
+                        <TextBox x:Name="txtCode2"
+                             TextChanged="txtCode2_TextChanged"
+                             Height="35" Width="20"
+                             MaxLength="1"
+                                 PreviewTextInput="txtCode2_PreviewTextInput"
+                             Margin="0 5 0 0"
+                             Background="White"
+                             Foreground="{DynamicResource FifthTextColor}"
+                             FontSize="26"
+                             FontFamily="send-series"
+                             BorderThickness="0"/>
+                    </Border>
+                    <Border CornerRadius="10" 
+                        Width="40"
+                        Margin="5 0 5 0"
+                        Height="50"
+                        x:Name="Inp_code_3"
+                        BorderThickness="2"
+                        BorderBrush="ForestGreen"
+                        Background="White"
+                        >
+                        <TextBox x:Name="txtCode3"
+                             TextChanged="txtCode3_TextChanged"
+                             Height="35" Width="20"
+                             MaxLength="1"
+                                 PreviewTextInput="txtCode3_PreviewTextInput"
+                             Margin="0 5 0 0"
+                             Background="White"
+                             Foreground="{DynamicResource FifthTextColor}"
+                             FontSize="26"
+                             FontFamily="send-series"
+                             BorderThickness="0"/>
+                    </Border>
+                    <Border CornerRadius="10" 
+                        Width="40"
+                        Margin="5 0 5 0"
+                        Height="50"
+                        x:Name="Inp_code_4"
+                        BorderThickness="2"
+                        BorderBrush="ForestGreen"
+                        Background="White"
+                        >
+                        <TextBox x:Name="txtCode4"
+                             TextChanged="txtCode4_TextChanged"
+                             Height="35" Width="20"
+                             MaxLength="1"
+                             Margin="0 5 0 0"
+                                 PreviewTextInput="txtCode4_PreviewTextInput"
+                             Background="White"
+                             Foreground="{DynamicResource FifthTextColor}"
+                             FontSize="26"
+                             FontFamily="send-series"
+                             BorderThickness="0"/>
+                    </Border>
+                    <Border CornerRadius="10" 
+                        Width="40"
+                        Margin="5 0 5 0"
+                        Height="50"
+                        x:Name="Inp_code_5"
+                        BorderThickness="2"
+                        BorderBrush="ForestGreen"
+                        Background="White">
+                        <TextBox x:Name="txtCode5"
+                             TextChanged="txtCode5_TextChanged"
+                             Height="35" Width="20"
+                             MaxLength="1"
+                             Margin="0 5 0 0"
+                                 PreviewTextInput="txtCode5_PreviewTextInput"
+                             Background="White"
+                             Foreground="{DynamicResource FifthTextColor}"
+                             FontSize="26"
+                             FontFamily="send-series"
+                             BorderThickness="0"/>
+                    </Border>
+                </StackPanel>
+
+                <Border>
+                    <Border>
+                        <Button x:Name="btnConfirm"
+                        Click="btnConfirm_Click"
+                        Style="{DynamicResource SendCodButton}"
+                        Content="Tasdiqlash"
+                        Margin="0 30 0 0"/>
+                    </Border>
+                    
+                </Border>
+                <Border Height="25"
+                    Margin="0 70 0 0">
+                    <StackPanel Width="280"
+                            Margin="70 0 0 0"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center">
+                        <Button x:Name="btnUpdate"
+                            Click="btnUpdate_Click"
+                            Style="{DynamicResource UpdateButton}"
+                            HorizontalAlignment="Right"
+                            Margin="0 1 5 0"/>
+                        <TextBlock x:Name="txb4"
+                               Width="220"
+                               Text="Kodni qayta yuborish" 
+                               TextWrapping="Wrap"
+                               FontSize="18"
+                               Foreground="{DynamicResource FifthTextColor}"/>
+                    </StackPanel>
+                </Border>
+                <Border Height="22"
+                    Margin="0 0 0 0">
+                    <StackPanel Width="380"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center">
+                        <TextBlock  x:Name="txb1"
+                                Text="Agar kod kelmasa," 
+                                FontSize="16" 
+                                Margin="0 0 5 0"
+                                Foreground="{DynamicResource FourthTextColor}"/>
+                        <TextBlock  x:Name="txtSecond"
+                                Text="60" 
+                                FontSize="16" 
+                                Margin="0 0 5 0"
+                                Foreground="{DynamicResource FifthTextColor}"/>
+                        <TextBlock x:Name="txb2"
+                               Width="220"
+                               Text="soniyadan so'ng yangi kod " 
+                               TextWrapping="Wrap"
+                               FontSize="16"
+                               Foreground="{DynamicResource FourthTextColor}"/>
+                    </StackPanel>
+                </Border>
+                <TextBlock  x:Name="txb3"
+                        Text="olishingiz mumkin." 
+                        FontSize="16"
+                        Margin="35 0 0 0"
+                        Foreground="{DynamicResource FourthTextColor}"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+   
+</Window>

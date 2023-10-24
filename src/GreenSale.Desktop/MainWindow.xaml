@@ -1,0 +1,166 @@
+﻿<Window x:Class="GreenSale.Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:icon="http://metro.mahapps.com/winfx/xaml/iconpacks"        
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GreenSale.Desktop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="780" Width="1280"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Window.Loaded ="Window_Loaded_Main"
+        ResizeMode="NoResize">
+    
+    <Border CornerRadius="25" 
+            Padding="20" 
+            Background="#f7f6f4"
+            MouseDown="Border_MouseDown"
+            MouseLeftButtonDown="Border_MouseLeftButtonDown">
+        <Grid Margin="0,0,0,40">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="220"/>
+                <ColumnDefinition Width="40*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!--Menu-->
+            <Border Grid.Row="0" Grid.Column="1">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 0 10 0">
+                    <Button x:Name="btnMinimized" Style="{DynamicResource MinimizedButton}" Click="btnMinimized_Click" ></Button>
+                    <Button x:Name="btnMaximized" Style="{DynamicResource MaximizedButton}" Click="btnMaximized_Click"></Button>
+                    <Button x:Name="btnExit" Style="{DynamicResource CloseButtun}" Click="btnExit_Click" ></Button>
+                </StackPanel>
+            </Border>
+            <Border Grid.Column="1" ></Border>
+            
+            <Border Grid.Row="1" CornerRadius="25">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#219241"/>
+                        <GradientStop Color="#209240"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <StackPanel>
+
+                    <StackPanel Orientation="Horizontal" 
+                                HorizontalAlignment="Center" 
+                                Margin="0 30 0 10">
+                        <Grid>
+                            <Border Background="#ffffff" Width="55" Height="55" CornerRadius="50"/>
+                                <Border 
+                                        BorderBrush="#ffffff" 
+                                        Width="55" Height="55" 
+                                        BorderThickness="3" 
+                                        CornerRadius="35">
+                            
+                               
+                                    <!--Icon-->
+
+                                    <Image Margin="0 0 2 0" Source="/Assets/Images/logo.png"/>
+
+                                </Border>
+
+                        </Grid>
+                        <!--Title text-->
+                        <TextBlock Text="Green Sale"
+                                   Foreground="#ffffff"
+                                   FontSize="30" 
+                                   Margin="10 7 0 3">
+
+                            <TextBlock.Effect>
+                                <DropShadowEffect BlurRadius="10" Opacity="0.32"/>
+                            </TextBlock.Effect>
+
+                        </TextBlock>
+
+                    </StackPanel>
+                    <!--Menu item-->
+                    <TextBlock Text="Menyu" Style="{DynamicResource menuTitle}"/>
+
+                    <RadioButton x:Name="AsosiyButton" 
+                                 Click="AsosiyButton_Click" 
+                                 Style="{DynamicResource menuButton}" >
+                        <StackPanel Orientation="Horizontal">
+                            <icon:PackIconMaterial Kind="Home" Style="{DynamicResource menuButtonIcon}"/>
+                            <TextBlock Text="Asosiy" Style="{DynamicResource menuButtonText}"/>
+                        </StackPanel>
+                    </RadioButton>
+
+                    <RadioButton x:Name="btnSeller"
+                                 Click="btnSeller_Click"
+                                 Style="{DynamicResource menuButton}">
+                        <StackPanel Orientation="Horizontal">
+                            <icon:PackIconMaterial Kind="Adjust" Style="{DynamicResource menuButtonIcon}"/>
+                            <TextBlock Text="Sotuvchi e'lonlari" Style="{DynamicResource menuButtonText}"/>
+                        </StackPanel>
+                    </RadioButton>
+                    <RadioButton x:Name="btnStorage"
+                                 Click="btnStorage_Click"
+                                 Style="{DynamicResource menuButton}">
+                        <StackPanel Orientation="Horizontal">
+                            <icon:PackIconMaterial Kind="HomeGroup" Style="{DynamicResource menuButtonIcon}"/>
+                            <TextBlock Text="Yukxona e'lonlari" Style="{DynamicResource menuButtonText}"/>
+                        </StackPanel>
+                    </RadioButton>
+                    <RadioButton x:Name="btnBuyer"
+                                 Click="btnBuyer_Click"
+                                 Style="{DynamicResource menuButton}">
+                        <StackPanel Orientation="Horizontal">
+                            <icon:PackIconMaterial Kind="ClipboardTextPlayOutline" Style="{DynamicResource menuButtonIcon}"/>
+                            <TextBlock Text="Oluvchi e'lonlari" Style="{DynamicResource menuButtonText}"/>
+                        </StackPanel>
+                    </RadioButton>
+                    <RadioButton x:Name="btnCreateAd"
+                                 Click="btnCreateAd_Click"
+                                 Style="{DynamicResource menuButton}">
+                        <StackPanel Orientation="Horizontal">
+                            <icon:PackIconMaterial Kind="GamepadDown" Style="{DynamicResource menuButtonIcon}"/>
+                            <TextBlock Text="E'lon yaratish" Style="{DynamicResource menuButtonText}"/>
+                        </StackPanel>
+                    </RadioButton>
+
+
+
+                    <!--<TextBlock Text="Yordam" Style="{DynamicResource menuTitle}"/>
+                    <RadioButton Style="{DynamicResource menuButton}" Click="Button_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <icon:PackIconMaterial Kind="AccountCheck" Style="{DynamicResource menuButtonIcon}"/>
+                            <TextBlock Text="Biz haqimizda" Style="{DynamicResource menuButtonText}"/>
+                        </StackPanel>
+                    </RadioButton>
+                    <RadioButton Style="{DynamicResource menuButton}" >
+                        <StackPanel Orientation="Horizontal">
+                            <icon:PackIconMaterial Kind="HomeGroup" Style="{DynamicResource menuButtonIcon}"/>
+                            <TextBlock Text="Biz bilan bog'lanish" Style="{DynamicResource menuButtonText}"/>
+                        </StackPanel>
+                    </RadioButton>-->
+                    <RadioButton x:Name="setting"
+                                 Click="setting_Click"
+                        Style="{DynamicResource menuButton}">
+                        <StackPanel Orientation="Horizontal">
+                            <icon:PackIconMaterial Kind="StarSettings" Style="{DynamicResource menuButtonIcon}"/>
+                            <TextBlock Text="Sozlamalar" Style="{DynamicResource menuButtonText}"/>
+                        </StackPanel>
+                    </RadioButton>
+
+
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="1" Grid.Row="1" >
+                <Frame x:Name="FrameFilter" NavigationUIVisibility="Hidden" Margin="0">
+
+                </Frame>
+            </Border>
+        </Grid>
+
+    </Border>
+</Window>

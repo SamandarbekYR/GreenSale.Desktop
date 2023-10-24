@@ -1,0 +1,44 @@
+﻿<Page x:Class="GreenSale.Desktop.Pages.CreateAd.ChooseAd"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GreenSale.Desktop.Pages.CreateAd"
+      mc:Ignorable="d" 
+      Title="ChooseAd"
+      Loaded="Page_Loaded"
+      >
+
+    <Border>
+        <StackPanel>
+            <Label Content="E'lon Yaratish"
+                           FontSize="28"
+                           Foreground="{DynamicResource FifthTextColor}"
+                           FontWeight="SemiBold"
+                           Margin="20 20 10 20 "/>
+            <WrapPanel Margin="15 0 0 0"
+                            Orientation="Horizontal"
+                            VerticalAlignment="Top">
+                <Button x:Name="btnSellerAd"
+                            Cursor="Hand"
+                            Content="Sotuvchi"   
+                            Click="btnSellerAd_Click"
+                            Style="{DynamicResource AdSellerButton}"     
+                            Tag="{DynamicResource right_angle}">
+                    </Button>
+                    <Button x:Name="btnBuyerAd"
+                            Content="Haridor"   
+                            Click="btnBuyerAd_Click"
+                            Style="{DynamicResource AdBuyerButton}"     
+                            Tag="{DynamicResource right_angle}">
+                    </Button>
+                    <Button x:Name="btnStorageAd"
+                            Content="Yukxona"   
+                            Click="btnStorageAd_Click"
+                            Style="{DynamicResource AdStorageButton}"     
+                            Tag="{DynamicResource right_angle}">
+                    </Button>
+                </WrapPanel>
+        </StackPanel>
+    </Border>
+</Page>
