@@ -3,7 +3,7 @@
 
 Kirish | Ro'yhatdan o'tish
 -----|-----
-![Kirish](https://github.com/greensaleuz/greensale-desktop/assets/123434293/8c1b9e39-022f-4d69-a549-1b07f5abbc19) | ![Ro'yhatdan o'tish](https://github.com/greensaleuz/greensale-desktop/assets/123434293/1240053e-6d30-4def-b032-fcb941ec01af)
+![Kirish](https://github.com/greensaleuz/greensale-desktop/assets/123434293/8c1b9e39-022f-4d69-a549-1b07f5abbc19) | ![image](https://github.com/SamandarbekYR/GreenSale.Desktop/assets/148877445/3da0e24e-43cf-4890-b4ed-648f235b9eb8)
 
 Asosiy
 ![Asosiy](https://github.com/greensaleuz/greensale-desktop/assets/123434293/556a1481-d681-4933-b6d1-52c37daefd3a)
