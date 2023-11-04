@@ -7,7 +7,7 @@ Kirish | Ro'yhatdan o'tish
 
 Send Code | Forgot Password 
 -----|-----
-![image](https://github.com/SamandarbekYR/GreenSale.Desktop/assets/148877445/b0a8e62a-a37e-4c4f-8af6-bc7e115e4261)|![image](https://github.com/SamandarbekYR/GreenSale.Desktop/assets/148877445/c1b3b0d4-fa66-48e4-a477-7526cd4f44ae)
+![image](https://github.com/SamandarbekYR/GreenSale.Desktop/assets/148877445/b8fda7bc-a026-4b66-833b-3dc7e38537a9)|![image](https://github.com/SamandarbekYR/GreenSale.Desktop/assets/148877445/c1b3b0d4-fa66-48e4-a477-7526cd4f44ae)
   
 
 Asosiy
