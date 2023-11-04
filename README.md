@@ -5,8 +5,7 @@ Kirish | Ro'yhatdan o'tish
 -----|-----
 ![image](https://github.com/SamandarbekYR/GreenSale.Desktop/assets/148877445/1d1bae99-febe-4d77-8870-d55a3edfa5c3)| ![image](https://github.com/SamandarbekYR/GreenSale.Desktop/assets/148877445/3da0e24e-43cf-4890-b4ed-648f235b9eb8)
 
-<b>Send Code </b> | <b>Forgot Password </b>
-
+Send Code | Forgot Password 
 -----|-----
 ![image](https://github.com/SamandarbekYR/GreenSale.Desktop/assets/148877445/b0a8e62a-a37e-4c4f-8af6-bc7e115e4261)|![image](https://github.com/SamandarbekYR/GreenSale.Desktop/assets/148877445/c1b3b0d4-fa66-48e4-a477-7526cd4f44ae)
   
